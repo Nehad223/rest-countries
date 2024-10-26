@@ -17,7 +17,7 @@ function App() {
         <NavBar/>
         <Routes>
           <Route path='rest-countries' element={ <Main/>}></Route>
-          <Route path='/details/:alpha3Code' element={<Details/>}></Route>
+          <Route path='rest-countries/details/:alpha3Code' element={<Details/>}></Route>
         </Routes>
       </CounterContext.Provider>
   
