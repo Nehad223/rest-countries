@@ -16,9 +16,8 @@ function App() {
       <CounterContext.Provider value={{ count, setCount,search,setSearch,isDarkMode,setIsDarkMode }}>
         <NavBar/>
         <Routes>
-          <Route path='/' element={ <Main/>}></Route>
-          <Route path='details/:alpha3Code' element={<Details/>}></Route>
-          <Route path='/test' element={<Test/>}></Route>
+          <Route path='rest-countries' element={ <Main/>}></Route>
+          <Route path='/details/:alpha3Code' element={<Details/>}></Route>
         </Routes>
       </CounterContext.Provider>
   
