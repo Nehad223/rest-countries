@@ -64,11 +64,11 @@ const Details = () => {
     const borderCities=data.borders;
     const navigate=useNavigate();
     function Back(){
-      navigate('/.');
+      navigate('/rest-countries');
       
     }
     function go(x){
-      navigate(`/details/${x}`);
+      navigate(`/rest-countries/details/${x}`);
     }
     useEffect(()=>{f();},[params.alpha3Code])
     function f(){
