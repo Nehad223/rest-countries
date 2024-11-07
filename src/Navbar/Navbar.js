@@ -25,7 +25,7 @@ const NavBar = () => {
   useEffect(()=>{Mode()},[isDarkMode])
   return (
     <div >
-        <nav className="navbar navbar-expand-lg navbar-light ">
+        <nav className="navbar  navbar-light ">
             <div className='col-lg-2 col-md-2'><a className="navbar-brand" >Where in the world?</a></div>
             <div className='col-lg-7 col-md-7'></div>
             <div className='col-lg-2 col-md-2'>
@@ -34,7 +34,7 @@ const NavBar = () => {
                 </button>
                  
             </div>
-            <div className='col-1'></div>
+            <div className='col-lg-1 col-md-1'></div>
             
       
         </nav>
@@ -44,3 +44,4 @@ const NavBar = () => {
 }
 
 export default NavBar;
+
