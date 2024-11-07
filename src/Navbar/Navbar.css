@@ -1,5 +1,6 @@
 nav{
     background-color: var(--navbarColor) !important;
+   
 
 }
 .navbar-brand{
@@ -21,7 +22,9 @@ button span {
 }
 @media (max-width:500px){
  button{
-    margin-left: 0px !important;
+    position: absolute !important;
+    right: 2% !important;
+    top:22% !important;
  }
 .navbar-brand{
     margin-left: 10px !important;    
@@ -33,6 +36,7 @@ button span{
 }
 }
 @media (max-width:300px){
+
     .navbar-brand{  
         font-size: 13px !important; 
     }
