@@ -23,7 +23,7 @@
     pointer-events: none;
     color: grey;
   }
-  @media (max-width:500px){
+  @media (max-width:775px){
     .searchbox{
     
       min-width: 0px !important;

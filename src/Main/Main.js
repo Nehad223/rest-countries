@@ -3,9 +3,8 @@ import country from '../data/data.json';
 import Countryies from './countryies';
 import { useContext } from 'react';
 import { CounterContext } from '../App';
-import './Main.css';
 import Search_Filter_Boxes from '../Search-Filter Boxes/Search-Filter-Boxes';
-
+import './Main.css'
 const Main = () => {
   const { count, search } = useContext(CounterContext);
   useEffect(() => {

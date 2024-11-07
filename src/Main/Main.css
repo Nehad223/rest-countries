@@ -1,12 +1,28 @@
+.country{
+    color: var(--brandColor);
+    background-color: var(--navbarColor);
+    border: solid  1px var(--navbarColor);
+    padding-bottom: 10px !important;
+
+}
+.Main-Mobile{
+    visibility: hidden;
+}
+.Main-Pc {
+    display: flex;
+    flex-wrap: wrap;
+}
+.cc{
+    flex: 1 0 25%; /* Each item occupies 25% width */
+    padding: 25px;
+    box-sizing: border-box;
+    }
 input{
     background-color: var(--navbarColor) !important;
     border-color:var(--navbarColor) !important ;
     color: var(--brandColor) !important;
 }
-ul li{
-    list-style-type:none;
-}
-.country{
+.Main-Pc .country{
     color: var(--brandColor);
     width: 200px !important;
     height: 150px;
@@ -14,70 +30,49 @@ ul li{
     border: solid  1px var(--navbarColor);
     width: 100%;
     cursor:pointer;
-
 }
-.dd{
-   
-    display: flex;
-    flex-wrap: wrap;
-
-}
-.cc{
-flex: 1 0 25%; /* Each item occupies 25% width */
-padding: 25px;
-box-sizing: border-box;
-}
-.img{
+.Main-Pc .img{
     width: 200px;
     height: 150px;
     cursor:pointer;
-
 }
 h2{
-  font-family: "Nunito Sans", sans-serif!important;
-    padding: 10px;
-    font-size: 20px !important;
-    font-weight: 900 !important;
-}
+    font-family: "Nunito Sans", sans-serif!important;
+      padding: 10px;
+      font-size: 20px !important;
+      font-weight: 900 !important;
+  }
+  
+  h5{     
+  font-family: "Nunito Sans", sans-serif !important;
+  font-weight: 500 !important;
+  font-optical-sizing: auto;
+  padding-left: 10px;
+  font-size: 12px !important;}
+@media (max-width:550px){
+    .Main-Pc{
+        visibility: hidden !important;
+    }
 
-h5{     
-font-family: "Nunito Sans", sans-serif !important;
-font-weight: 500 !important;
-font-optical-sizing: auto;
-padding-left: 10px;
-font-size: 12px !important;}
-@media(max-width:500px){
-    h5{
-        margin-top: 10px !important;
-    }
-    .country{
-        margin-left: 0px !important;
-        width: 300px !important;
-    }
-    .img{
-        margin-left: 0px !important;
-        width: 300px !important;
-    }
-    .main{
+    .Main-Mobile{ 
+        
+        position: absolute !important;
+        visibility: visible !important;
         display: flex;
+        flex-wrap: wrap ;
+        flex-direction:column;
         justify-content: center;
         align-items: center;
+        top:33dvb;
     }
-}
-@media(max-width:320px){
-    .country{
-        margin-left: 0px !important;
-        width: 180px !important;
+   .Main-Mobile .img{
+    width:80cqi !important;
+
     }
-    .img{
-        margin-left: 0px !important;
-        width: 180px !important;
+    .Main-Mobile .country{
+        padding: 10px!important;
     }
-    .main{
-        
-        margin: 0px !important;
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-    }
+
+
+   
 }
