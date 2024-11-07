@@ -23,7 +23,7 @@ button span {
 @media (max-width:500px){
 .dark-light{
     position: absolute !important;
-    right: 2% !important;
+    right: 4% !important;
     top:22% !important;
  }
 .navbar-brand{
