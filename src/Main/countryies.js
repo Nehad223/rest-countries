@@ -14,30 +14,30 @@ const Countryies = (props) => {
     return (
         <Fragment>
             <div className='Main-Pc container mt-5' >
-                    {props.data.map((data, dataIndex) =>
-                        <div key={dataIndex} className='cc'>
-                            <img src={data.flags.png} className='img' onClick={() => f(data.alpha3Code)} />
-                            <div className='country ' onClick={() => f(data.alpha3Code)}>
-                                <h2>{data.name}</h2>
-                                <h5> Population: {data.population}</h5>
-                                <h5> Region: {data.region}</h5>
-                                <h5>Captial: {data.capital}</h5>
-                            </div>
+                {props.data.map((data, dataIndex) =>
+                    <div key={dataIndex} className='cc'>
+                        <img src={data.flags.png} className='img' onClick={() => f(data.alpha3Code)} />
+                        <div className='country ' onClick={() => f(data.alpha3Code)}>
+                            <h2>{data.name}</h2>
+                            <h5> Population: {data.population}</h5>
+                            <h5> Region: {data.region}</h5>
+                            <h5>Captial: {data.capital}</h5>
                         </div>
-                    )}
+                    </div>
+                )}
             </div>
             <div className='Main-Mobile' >
-                    {props.data.map((data, dataIndex) =>
-                        <div key={dataIndex} className='mb-4'>
-                            <img src={data.flags.png} className='img' onClick={() => f(data.alpha3Code)} />
-                            <div className='country' onClick={() => f(data.alpha3Code)}>
-                                <h2>{data.name}</h2>
-                                <h5> Population: {data.population}</h5>
-                                <h5> Region: {data.region}</h5>
-                                <h5>Captial: {data.capital}</h5>
-                            </div>
-                        </div>)}
-            
+                {props.data.map((data, dataIndex) =>
+                    <div key={dataIndex} className='mb-4'>
+                        <img src={data.flags.png} className='img' onClick={() => f(data.alpha3Code)} />
+                        <div className='country' onClick={() => f(data.alpha3Code)}>
+                            <h2>{data.name}</h2>
+                            <h5> Population: {data.population}</h5>
+                            <h5> Region: {data.region}</h5>
+                            <h5>Captial: {data.capital}</h5>
+                        </div>
+                    </div>)}
+
             </div>
         </Fragment>
     )
