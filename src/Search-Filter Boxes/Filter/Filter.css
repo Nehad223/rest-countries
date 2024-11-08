@@ -6,6 +6,9 @@
     height: 40px;
 }
 @media (max-width:775px){
+    .form-selector{
+      margin-top: 15px !important;
+    }
 
     .form-select{
         font-size: 14px !important;

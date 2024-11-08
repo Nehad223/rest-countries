@@ -5,7 +5,7 @@ import './Filter.css';
 const Filter = () => {
   const { setCount, count } = useContext(CounterContext);
   return (
-    <div>
+    <div className='form-selector'>
       <select className="form-select" aria-label="Default select example" value={count} onChange={(e) => setCount(e.target.value)} >
         <option selected>Filter by Region</option>
         <option value="Africa" >Africa</option>
