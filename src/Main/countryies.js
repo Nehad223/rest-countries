@@ -12,7 +12,7 @@ const Countryies = (props) => {
 
     }
     return (
-        <Fragment>
+        <div className='ss'>
             <div className='Main-Pc container mt-5' >
                 {props.data.map((data, dataIndex) =>
                     <div key={dataIndex} className='cc'>
@@ -39,7 +39,7 @@ const Countryies = (props) => {
                     </div>)}
 
             </div>
-        </Fragment>
+        </div>
     )
 }
 

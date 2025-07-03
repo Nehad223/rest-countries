@@ -3,11 +3,10 @@
     background-color: var(--navbarColor);
     border: solid 1px var(--navbarColor);
     padding-bottom: 10px !important;
-
 }
 
 .Main-Mobile {
-    visibility: hidden;
+    display: none;
 }
 
 .Main-Pc {
@@ -17,7 +16,6 @@
 
 .cc {
     flex: 1 0 25%;
-    /* Each item occupies 25% width */
     padding: 25px;
     box-sizing: border-box;
 }
@@ -29,12 +27,8 @@ input {
 }
 
 .Main-Pc .country {
-    color: var(--brandColor);
-    width: 200px !important;
+    width: 200px;
     height: 150px;
-    background-color: var(--navbarColor);
-    border: solid 1px var(--navbarColor);
-    width: 100%;
     cursor: pointer;
 }
 
@@ -59,46 +53,33 @@ h5 {
     font-size: 12px !important;
 }
 
-@media (max-width:550px) {
+@media (max-width: 550px) {
     .Main-Pc {
-        visibility: hidden !important;
+        display: none !important;
     }
 
     .Main-Mobile {
-
-        position: absolute !important;
-        visibility: visible !important;
-        display: flex;
+       
+        display: flex !important;
         flex-wrap: wrap;
         flex-direction: column;
-        top: 33dvb;
         margin-left: 20px !important;
     }
 
-    .Main-Mobile .img {
-        width: 80cqi !important;
-
-    }
-
+    .Main-Mobile .img,
     .Main-Mobile .country {
-        padding: 10px !important;
         width: 80cqi !important;
-
     }
-
-
-
 }
 
-@media (max-width:300px) {
+@media (max-width: 300px) {
     .Main-Mobile {
         margin-left: 12px !important;
     }
 }
 
-@media (max-width:200px) {
+@media (max-width: 200px) {
     .Main-Mobile {
         margin-left: 7px !important;
     }
-
 }

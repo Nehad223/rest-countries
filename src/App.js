@@ -11,7 +11,7 @@ function App() {
   const [search, setSearch] = useState("");
   const [isDarkMode, setIsDarkMode] = useState(false);
   return (
-    <div>
+ 
       <CounterContext.Provider value={{ count, setCount, search, setSearch, isDarkMode, setIsDarkMode }}>
         <NavBar />
         <Routes>
@@ -19,7 +19,6 @@ function App() {
           <Route path='rest-countries/details/:alpha3Code' element={<Details />}></Route>
         </Routes>
       </CounterContext.Provider>
-    </div>
   );
 }
 
